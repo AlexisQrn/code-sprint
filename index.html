@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy & Meteo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b4562df39.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    
+  <!-- Bouton d'accès à l'API Giphy -->
+<div class="inputCont">
+    <input type="text" id = "input">
+<button id ="btn" onclick = "sendApiRequest()" >Rechercher un GIF</button><br>
+</div>
+ 
+
+<!-- Champs d'accès à l'API Météo -->
+
+<form action="" id="form">
+ <div class="form-group">
+     <input type="text" class="form-control" id="inputCity" placeholder="Entrez une ville"  autocomplete="off">
+ 
+
+<button type="submit" class="btn-info btn-block">
+    Rechercher
+</button>
+</div>
+</form>
+
+<div class="box-container">
+
+<div id="city" class="box"></div>
+<div id="temps" class="box"></div>
+<div id="humidity" class="box"></div>
+<div id="wind" class="box"></div>
+
+</div>
+
+<script src ="weather.js"></script>
+<script src ="giphy.js"></script>
+</body>
+</html>
